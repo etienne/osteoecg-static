@@ -1,38 +1,60 @@
 section.hero {
   background-image: url("../images/gradient.png"), url("../images/cercle.png"), url("../images/ciel.jpg");
-  background-size: auto, 161px, cover;
-  background-position: bottom, 50% -32px, 50% 63%;
+  background-size: auto, 81px, cover;
+  background-position: bottom, 50% -16px, 50% 63%;
   background-repeat: repeat-x, no-repeat, no-repeat;
   background-blend-mode: multiply, multiply, normal;
   color: $creme;
   
+  @include tablet {
+    background-size: auto, 161px, cover;
+    background-position: bottom, 50% -32px, 50% 63%;
+  }
+  
   &:before {
     content: "";
     background-image: url("../images/cercle.png");
-    background-size: 161px;
+    background-size: 81px;
     background-position: top center;
     background-repeat: no-repeat;
     display: block;
-    height: 32px;
+    height: 16px;
     position: relative;
-    top: -32px;
+    top: -16px;
+    
+    @include tablet {
+      height: 32px;
+      background-size: 161px;
+      top: -32px;
+    }
   }
   
   p {
     @include span(full);
-    font-size: 46px;
-    line-height: 62px;
+    font-size: 30px;
+    line-height: 40px;
     text-align: center;
     font-style: italic;
-    margin: 2.5rem 0;
+    margin: 1rem 0;
+    
+    @include tablet {
+      font-size: 46px;
+      line-height: 62px;
+      margin: 2.5rem 0;
+    }
   }
   
   div.actions {
     @include span(full);
     margin: 40px 0;
     text-align: center;
-    font-size: 18px;
-    line-height: 29px;
+    font-size: 15px;
+    line-height: 24px;
+    
+    @include tablet {
+      font-size: 18px;
+      line-height: 29px;
+    }
     
     a {
       color: $creme;
@@ -56,15 +78,29 @@ section.hero {
 
 img.logo {
   display: block;
-  margin: 0 auto 42px;
-  width: 113px;
+  margin: 0 auto 30px;
+  width: 57px;
+  
+  @include tablet {
+    margin: 0 auto 42px;
+    width: 113px;
+  }
 }
 
 section.about {
-  margin: 4rem 0;
+  margin: 2.5rem 0;
+  
+  @include tablet {
+    margin: 4rem 0;
+  }
   
   p {
-    font-size: 24px;
-    line-height: 39px;
+    font-size: 19px;
+    line-height: 30px;
+    
+    @include tablet {
+      font-size: 24px;
+      line-height: 39px;
+    }
   }
 }

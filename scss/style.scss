@@ -7,6 +7,9 @@
 $creme: #F8F5EE;
 $brown: #745C57;
 $turquoise: #6CD5CB;
+$susy: (
+  columns: 12,
+);
 
 @import "mixins";
 @import "global";
