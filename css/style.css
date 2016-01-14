@@ -180,7 +180,7 @@ div.menu ul a:hover {
 /* line 77, ../scss/_layout.scss */
 footer {
   margin-top: 5rem;
-  padding: 80px 0 7rem;
+  padding: 80px 0 8rem;
   background-color: #f1efe3;
   font-size: 14px;
   line-height: 26px;
@@ -196,8 +196,9 @@ footer {
 footer:before {
   content: "";
   position: absolute;
-  margin-top: -96px;
-  width: 100%;
+  left: 50%;
+  margin: -96px 0 0 -40px;
+  width: 81px;
   height: 81px;
   background: url("../images/logo-footer.png") no-repeat center;
   background-size: 81px;
@@ -205,18 +206,19 @@ footer:before {
 @media (min-width: 768px) {
   /* line 89, ../scss/_layout.scss */
   footer:before {
-    margin-top: -112px;
+    margin: -112px 0 0 -80px;
+    width: 161px;
     height: 161px;
     background-size: 161px;
   }
 }
-/* line 106, ../scss/_layout.scss */
+/* line 108, ../scss/_layout.scss */
 footer ul.contact {
   text-align: center;
   margin: 1.5rem 0;
 }
 @media (min-width: 768px) {
-  /* line 106, ../scss/_layout.scss */
+  /* line 108, ../scss/_layout.scss */
   footer ul.contact {
     text-align: left;
     margin: 0;
@@ -225,30 +227,30 @@ footer ul.contact {
     margin-right: 1.69492%;
   }
 }
-/* line 116, ../scss/_layout.scss */
+/* line 118, ../scss/_layout.scss */
 footer ul.contact a {
   color: #745C57;
   border-bottom: 2px solid rgba(116, 92, 87, 0.1);
 }
-/* line 120, ../scss/_layout.scss */
+/* line 122, ../scss/_layout.scss */
 footer ul.contact a:hover {
   border-bottom-color: rgba(116, 92, 87, 0.3);
 }
 @media (min-width: 768px) {
-  /* line 126, ../scss/_layout.scss */
+  /* line 128, ../scss/_layout.scss */
   footer div.appointment {
     width: 49.15254%;
     float: right;
     margin-right: 0;
   }
 }
-/* line 131, ../scss/_layout.scss */
+/* line 133, ../scss/_layout.scss */
 footer div.appointment a.button {
   display: block;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 131, ../scss/_layout.scss */
+  /* line 133, ../scss/_layout.scss */
   footer div.appointment a.button {
     float: right;
   }
@@ -375,6 +377,10 @@ section.about {
 section.about p {
   font-size: 19px;
   line-height: 30px;
+}
+/* line 101, ../scss/_home.scss */
+section.about p + p {
+  text-indent: 2rem;
 }
 @media (min-width: 768px) {
   /* line 97, ../scss/_home.scss */

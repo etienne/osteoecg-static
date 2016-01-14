@@ -89,14 +89,16 @@ footer {
   &:before {
     content: "";
     position: absolute;
-    margin-top: -96px;
-    width: 100%;
+    left: 50%;
+    margin: -96px 0 0 -40px;
+    width: 81px;
     height: 81px;
     background: url("../images/logo-footer.png") no-repeat center;
     background-size: 81px;
     
     @include tablet {
-      margin-top: -112px;
+      margin: -112px 0 0 -80px;
+      width: 161px;
       height: 161px;
       background-size: 161px;
     }
