@@ -79,11 +79,17 @@ body {
 @media (min-width: 768px) {
   /* line 1, ../scss/_layout.scss */
   body {
+    margin-top: 5rem;
+  }
+}
+@media (min-width: 980px) {
+  /* line 1, ../scss/_layout.scss */
+  body {
     margin-top: 8rem;
   }
 }
 
-/* line 14, ../scss/_layout.scss */
+/* line 18, ../scss/_layout.scss */
 .container {
   max-width: 92%;
   margin-left: auto;
@@ -96,7 +102,21 @@ body {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 14, ../scss/_layout.scss */
+  /* line 18, ../scss/_layout.scss */
+  .container {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (min-width: 980px) {
+  /* line 18, ../scss/_layout.scss */
   .container {
     max-width: 960px;
     margin-left: auto;
@@ -110,26 +130,26 @@ body {
   }
 }
 
-/* line 22, ../scss/_layout.scss */
+/* line 30, ../scss/_layout.scss */
 header {
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
-  /* line 22, ../scss/_layout.scss */
+  /* line 30, ../scss/_layout.scss */
   header {
     margin-bottom: 5rem;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 30, ../scss/_layout.scss */
+  /* line 38, ../scss/_layout.scss */
   div.signature {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-/* line 35, ../scss/_layout.scss */
+/* line 43, ../scss/_layout.scss */
 div.signature h1, div.signature h2 {
   font-size: 22px;
   line-height: 32px;
@@ -137,24 +157,24 @@ div.signature h1, div.signature h2 {
   padding: 0;
 }
 @media (min-width: 768px) {
-  /* line 35, ../scss/_layout.scss */
+  /* line 43, ../scss/_layout.scss */
   div.signature h1, div.signature h2 {
     font-size: 27px;
     line-height: 37px;
   }
 }
-/* line 47, ../scss/_layout.scss */
+/* line 55, ../scss/_layout.scss */
 div.signature h2 {
   font-weight: 400;
   font-style: italic;
 }
 
-/* line 53, ../scss/_layout.scss */
+/* line 61, ../scss/_layout.scss */
 div.menu {
   margin-top: 1.5rem;
 }
 @media (min-width: 768px) {
-  /* line 53, ../scss/_layout.scss */
+  /* line 61, ../scss/_layout.scss */
   div.menu {
     width: 49.15254%;
     float: right;
@@ -163,21 +183,21 @@ div.menu {
   }
 }
 @media (min-width: 768px) {
-  /* line 62, ../scss/_layout.scss */
+  /* line 70, ../scss/_layout.scss */
   div.menu ul {
     float: right;
   }
 }
-/* line 67, ../scss/_layout.scss */
+/* line 75, ../scss/_layout.scss */
 div.menu ul a {
   padding-bottom: 0.6rem;
 }
-/* line 70, ../scss/_layout.scss */
+/* line 78, ../scss/_layout.scss */
 div.menu ul a:hover {
   border-bottom: 5px solid;
 }
 
-/* line 77, ../scss/_layout.scss */
+/* line 85, ../scss/_layout.scss */
 footer {
   margin-top: 5rem;
   padding: 80px 0 8rem;
@@ -186,13 +206,20 @@ footer {
   line-height: 26px;
 }
 @media (min-width: 768px) {
-  /* line 77, ../scss/_layout.scss */
+  /* line 85, ../scss/_layout.scss */
+  footer {
+    margin-top: 6rem;
+    padding-bottom: 8rem;
+  }
+}
+@media (min-width: 980px) {
+  /* line 85, ../scss/_layout.scss */
   footer {
     margin-top: 8rem;
     padding-bottom: 12rem;
   }
 }
-/* line 89, ../scss/_layout.scss */
+/* line 102, ../scss/_layout.scss */
 footer:before {
   content: "";
   position: absolute;
@@ -204,7 +231,16 @@ footer:before {
   background-size: 81px;
 }
 @media (min-width: 768px) {
-  /* line 89, ../scss/_layout.scss */
+  /* line 102, ../scss/_layout.scss */
+  footer:before {
+    margin: -104px 0 0 -60px;
+    width: 121px;
+    height: 121px;
+    background-size: 121px;
+  }
+}
+@media (min-width: 980px) {
+  /* line 102, ../scss/_layout.scss */
   footer:before {
     margin: -112px 0 0 -80px;
     width: 161px;
@@ -212,13 +248,13 @@ footer:before {
     background-size: 161px;
   }
 }
-/* line 108, ../scss/_layout.scss */
+/* line 127, ../scss/_layout.scss */
 footer ul.contact {
   text-align: center;
   margin: 1.5rem 0;
 }
 @media (min-width: 768px) {
-  /* line 108, ../scss/_layout.scss */
+  /* line 127, ../scss/_layout.scss */
   footer ul.contact {
     text-align: left;
     margin: 0;
@@ -227,30 +263,30 @@ footer ul.contact {
     margin-right: 1.69492%;
   }
 }
-/* line 118, ../scss/_layout.scss */
+/* line 137, ../scss/_layout.scss */
 footer ul.contact a {
   color: #745C57;
   border-bottom: 2px solid rgba(116, 92, 87, 0.1);
 }
-/* line 122, ../scss/_layout.scss */
+/* line 141, ../scss/_layout.scss */
 footer ul.contact a:hover {
   border-bottom-color: rgba(116, 92, 87, 0.3);
 }
 @media (min-width: 768px) {
-  /* line 128, ../scss/_layout.scss */
+  /* line 147, ../scss/_layout.scss */
   footer div.appointment {
     width: 49.15254%;
     float: right;
     margin-right: 0;
   }
 }
-/* line 133, ../scss/_layout.scss */
+/* line 152, ../scss/_layout.scss */
 footer div.appointment a.button {
   display: block;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 133, ../scss/_layout.scss */
+  /* line 152, ../scss/_layout.scss */
   footer div.appointment a.button {
     float: right;
   }
@@ -268,11 +304,18 @@ section.hero {
 @media (min-width: 768px) {
   /* line 1, ../scss/_home.scss */
   section.hero {
+    background-size: auto, 121px, cover;
+    background-position: bottom, 50% -24px, 50% 63%;
+  }
+}
+@media (min-width: 980px) {
+  /* line 1, ../scss/_home.scss */
+  section.hero {
     background-size: auto, 161px, cover;
     background-position: bottom, 50% -32px, 50% 63%;
   }
 }
-/* line 14, ../scss/_home.scss */
+/* line 19, ../scss/_home.scss */
 section.hero:before {
   content: "";
   background-image: url("../images/cercle.png");
@@ -285,14 +328,22 @@ section.hero:before {
   top: -16px;
 }
 @media (min-width: 768px) {
-  /* line 14, ../scss/_home.scss */
+  /* line 19, ../scss/_home.scss */
+  section.hero:before {
+    height: 24px;
+    background-size: 121px;
+    top: -24px;
+  }
+}
+@media (min-width: 980px) {
+  /* line 19, ../scss/_home.scss */
   section.hero:before {
     height: 32px;
     background-size: 161px;
     top: -32px;
   }
 }
-/* line 32, ../scss/_home.scss */
+/* line 43, ../scss/_home.scss */
 section.hero p {
   width: 100%;
   float: left;
@@ -305,14 +356,24 @@ section.hero p {
   margin: 1rem 0;
 }
 @media (min-width: 768px) {
-  /* line 32, ../scss/_home.scss */
+  /* line 43, ../scss/_home.scss */
   section.hero p {
     font-size: 46px;
     line-height: 62px;
     margin: 2.5rem 0;
   }
 }
-/* line 47, ../scss/_home.scss */
+/* line 57, ../scss/_home.scss */
+section.hero p br {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 57, ../scss/_home.scss */
+  section.hero p br {
+    display: block;
+  }
+}
+/* line 66, ../scss/_home.scss */
 section.hero div.actions {
   width: 100%;
   float: left;
@@ -324,66 +385,73 @@ section.hero div.actions {
   line-height: 24px;
 }
 @media (min-width: 768px) {
-  /* line 47, ../scss/_home.scss */
+  /* line 66, ../scss/_home.scss */
   section.hero div.actions {
     font-size: 18px;
     line-height: 29px;
   }
 }
-/* line 59, ../scss/_home.scss */
+/* line 78, ../scss/_home.scss */
 section.hero div.actions a {
   color: #F8F5EE;
 }
-/* line 62, ../scss/_home.scss */
+/* line 81, ../scss/_home.scss */
 section.hero div.actions a.button {
   margin-bottom: 1rem;
 }
-/* line 65, ../scss/_home.scss */
+/* line 84, ../scss/_home.scss */
 section.hero div.actions a.button:hover {
   background-color: #F8F5EE;
   border-color: #F8F5EE;
   color: #745C57;
 }
-/* line 72, ../scss/_home.scss */
+/* line 91, ../scss/_home.scss */
 section.hero div.actions a.tel {
   font-weight: 700;
 }
 
-/* line 79, ../scss/_home.scss */
+/* line 98, ../scss/_home.scss */
 img.logo {
   display: block;
   margin: 0 auto 30px;
   width: 57px;
 }
 @media (min-width: 768px) {
-  /* line 79, ../scss/_home.scss */
+  /* line 98, ../scss/_home.scss */
+  img.logo {
+    margin: 0 auto 36px;
+    width: 85px;
+  }
+}
+@media (min-width: 980px) {
+  /* line 98, ../scss/_home.scss */
   img.logo {
     margin: 0 auto 42px;
     width: 113px;
   }
 }
 
-/* line 90, ../scss/_home.scss */
+/* line 114, ../scss/_home.scss */
 section.about {
   margin: 2.5rem 0;
 }
 @media (min-width: 768px) {
-  /* line 90, ../scss/_home.scss */
+  /* line 114, ../scss/_home.scss */
   section.about {
     margin: 4rem 0;
   }
 }
-/* line 97, ../scss/_home.scss */
+/* line 121, ../scss/_home.scss */
 section.about p {
   font-size: 19px;
   line-height: 30px;
 }
-/* line 101, ../scss/_home.scss */
+/* line 125, ../scss/_home.scss */
 section.about p + p {
   text-indent: 2rem;
 }
 @media (min-width: 768px) {
-  /* line 97, ../scss/_home.scss */
+  /* line 121, ../scss/_home.scss */
   section.about p {
     font-size: 24px;
     line-height: 39px;

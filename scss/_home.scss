@@ -7,6 +7,11 @@ section.hero {
   color: $creme;
   
   @include tablet {
+    background-size: auto, 121px, cover;
+    background-position: bottom, 50% -24px, 50% 63%;
+  }
+
+  @include desktop {
     background-size: auto, 161px, cover;
     background-position: bottom, 50% -32px, 50% 63%;
   }
@@ -23,6 +28,12 @@ section.hero {
     top: -16px;
     
     @include tablet {
+      height: 24px;
+      background-size: 121px;
+      top: -24px;
+    }
+
+    @include desktop {
       height: 32px;
       background-size: 161px;
       top: -32px;
@@ -41,6 +52,14 @@ section.hero {
       font-size: 46px;
       line-height: 62px;
       margin: 2.5rem 0;
+    }
+    
+    br {
+      display: none;
+      
+      @include tablet {
+        display: block;
+      }
     }
   }
   
@@ -82,6 +101,11 @@ img.logo {
   width: 57px;
   
   @include tablet {
+    margin: 0 auto 36px;
+    width: 85px;
+  }
+
+  @include desktop {
     margin: 0 auto 42px;
     width: 113px;
   }
