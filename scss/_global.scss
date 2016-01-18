@@ -29,6 +29,15 @@ h3 {
   }
 }
 
+h4 {
+  margin: 1rem 0 0;
+  
+  span {
+    color: rgba($brown, 0.4);
+    font-weight: normal;
+  }
+}
+
 a.button {
   display: inline-block;
   border: 2px solid;

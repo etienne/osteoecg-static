@@ -51,6 +51,16 @@ h3 {
 }
 
 /* line 32, ../scss/_global.scss */
+h4 {
+  margin: 1rem 0 0;
+}
+/* line 35, ../scss/_global.scss */
+h4 span {
+  color: rgba(116, 92, 87, 0.4);
+  font-weight: normal;
+}
+
+/* line 41, ../scss/_global.scss */
 a.button {
   display: inline-block;
   border: 2px solid;
@@ -60,7 +70,7 @@ a.button {
   padding: 0.6rem 1.1rem;
   text-align: center;
 }
-/* line 40, ../scss/_global.scss */
+/* line 49, ../scss/_global.scss */
 a.button:hover {
   background-color: #6CD5CB;
   border-color: #6CD5CB;
@@ -189,15 +199,24 @@ div.menu {
   }
 }
 /* line 75, ../scss/_layout.scss */
+div.menu ul li {
+  margin-left: 1.6rem;
+  float: left;
+}
+/* line 80, ../scss/_layout.scss */
 div.menu ul a {
   padding-bottom: 0.6rem;
 }
-/* line 78, ../scss/_layout.scss */
+/* line 83, ../scss/_layout.scss */
 div.menu ul a:hover {
   border-bottom: 5px solid;
 }
+/* line 87, ../scss/_layout.scss */
+div.menu ul a img.facebook {
+  width: 16px;
+}
 
-/* line 85, ../scss/_layout.scss */
+/* line 94, ../scss/_layout.scss */
 footer {
   margin-top: 5rem;
   padding: 80px 0 8rem;
@@ -206,20 +225,20 @@ footer {
   line-height: 26px;
 }
 @media (min-width: 768px) {
-  /* line 85, ../scss/_layout.scss */
+  /* line 94, ../scss/_layout.scss */
   footer {
     margin-top: 6rem;
     padding-bottom: 8rem;
   }
 }
 @media (min-width: 980px) {
-  /* line 85, ../scss/_layout.scss */
+  /* line 94, ../scss/_layout.scss */
   footer {
     margin-top: 8rem;
     padding-bottom: 12rem;
   }
 }
-/* line 102, ../scss/_layout.scss */
+/* line 111, ../scss/_layout.scss */
 footer:before {
   content: "";
   position: absolute;
@@ -231,7 +250,7 @@ footer:before {
   background-size: 81px;
 }
 @media (min-width: 768px) {
-  /* line 102, ../scss/_layout.scss */
+  /* line 111, ../scss/_layout.scss */
   footer:before {
     margin: -104px 0 0 -60px;
     width: 121px;
@@ -240,7 +259,7 @@ footer:before {
   }
 }
 @media (min-width: 980px) {
-  /* line 102, ../scss/_layout.scss */
+  /* line 111, ../scss/_layout.scss */
   footer:before {
     margin: -112px 0 0 -80px;
     width: 161px;
@@ -248,13 +267,13 @@ footer:before {
     background-size: 161px;
   }
 }
-/* line 127, ../scss/_layout.scss */
+/* line 136, ../scss/_layout.scss */
 footer ul.contact {
   text-align: center;
   margin: 1.5rem 0;
 }
 @media (min-width: 768px) {
-  /* line 127, ../scss/_layout.scss */
+  /* line 136, ../scss/_layout.scss */
   footer ul.contact {
     text-align: left;
     margin: 0;
@@ -263,30 +282,30 @@ footer ul.contact {
     margin-right: 1.69492%;
   }
 }
-/* line 137, ../scss/_layout.scss */
+/* line 146, ../scss/_layout.scss */
 footer ul.contact a {
   color: #745C57;
   border-bottom: 2px solid rgba(116, 92, 87, 0.1);
 }
-/* line 141, ../scss/_layout.scss */
+/* line 150, ../scss/_layout.scss */
 footer ul.contact a:hover {
   border-bottom-color: rgba(116, 92, 87, 0.3);
 }
 @media (min-width: 768px) {
-  /* line 147, ../scss/_layout.scss */
+  /* line 156, ../scss/_layout.scss */
   footer div.appointment {
     width: 49.15254%;
     float: right;
     margin-right: 0;
   }
 }
-/* line 152, ../scss/_layout.scss */
+/* line 161, ../scss/_layout.scss */
 footer div.appointment a.button {
   display: block;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 152, ../scss/_layout.scss */
+  /* line 161, ../scss/_layout.scss */
   footer div.appointment a.button {
     float: right;
   }
