@@ -133,15 +133,37 @@ footer {
     }
   }
   
-  ul.contact {
+  div.appointment {
     text-align: center;
-    margin: 1.5rem 0;
     
     @include tablet {
       text-align: left;
-      margin: 0;
-      @include span(6 first);
+      @include span(6);
     }
+    
+    a.button {
+      display: block;
+      margin: 1rem auto 1rem;
+      float: none;
+
+      @include tablet {
+        margin-top: 0;
+        float: left;
+      }
+    }
+  }
+  
+  div.addresses {
+    text-align: center;
+    
+    @include tablet {
+      @include span(6 last);
+      text-align: right;
+    }
+  }
+  
+  ul.contact {
+    clear: both;
     
     a {
       color: $brown;
@@ -150,19 +172,21 @@ footer {
       &:hover {
         border-bottom-color: rgba($brown, 0.3);
       }
-    }
-  }
-  
-  div.appointment {
-    @include tablet {
-      @include span(6 last);
-    }
-    
-    a.button {
-      display: block;
-      margin: 0 auto;
-      @include tablet {
-        float: right;
+      
+      &.button {
+        position: relative;
+        top: -1px;
+        border: 1px solid rgba($brown, 0.16);
+        margin-left: 0.5rem;
+        padding: 0 0.4rem;
+        font-size: 9px;
+        line-height: 21px;
+        color: rgba($brown, 0.6);
+        
+        &:hover {
+          border-color: $turquoise;
+          color: $creme;
+        }
       }
     }
   }
