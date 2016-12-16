@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Quicksand:700);
 /* line 13, ../scss/_mixins.scss */
-a.button, div.menu {
+a.button, div.menu, section.hero div.actions span {
   font-family: "Quicksand";
   font-weight: 700;
   text-transform: uppercase;
@@ -8,7 +8,7 @@ a.button, div.menu {
 }
 @media (min-width: 768px) {
   /* line 13, ../scss/_mixins.scss */
-  a.button, div.menu {
+  a.button, div.menu, section.hero div.actions span {
     font-size: 14px;
   }
 }
@@ -437,65 +437,70 @@ section.hero div.actions {
   }
 }
 /* line 79, ../scss/_home.scss */
+section.hero div.actions span {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+/* line 85, ../scss/_home.scss */
 section.hero div.actions a {
   color: #F8F5EE;
 }
-/* line 82, ../scss/_home.scss */
+/* line 88, ../scss/_home.scss */
 section.hero div.actions a.button {
-  margin-bottom: 1rem;
+  margin: 0 0.2rem 1rem;
 }
-/* line 85, ../scss/_home.scss */
+/* line 91, ../scss/_home.scss */
 section.hero div.actions a.button:hover {
   background-color: #F8F5EE;
   border-color: #F8F5EE;
   color: #745C57;
 }
-/* line 92, ../scss/_home.scss */
+/* line 98, ../scss/_home.scss */
 section.hero div.actions a.tel {
   font-weight: 700;
 }
 
-/* line 99, ../scss/_home.scss */
+/* line 105, ../scss/_home.scss */
 img.logo {
   display: block;
   margin: 0 auto 30px;
   width: 57px;
 }
 @media (min-width: 768px) {
-  /* line 99, ../scss/_home.scss */
+  /* line 105, ../scss/_home.scss */
   img.logo {
     margin: 0 auto 36px;
     width: 85px;
   }
 }
 @media (min-width: 980px) {
-  /* line 99, ../scss/_home.scss */
+  /* line 105, ../scss/_home.scss */
   img.logo {
     margin: 0 auto 42px;
     width: 113px;
   }
 }
 
-/* line 115, ../scss/_home.scss */
+/* line 121, ../scss/_home.scss */
 section.about {
   margin: 2.5rem 0;
 }
 @media (min-width: 768px) {
-  /* line 115, ../scss/_home.scss */
+  /* line 121, ../scss/_home.scss */
   section.about {
     margin: 4rem 0;
   }
 }
-/* line 122, ../scss/_home.scss */
+/* line 128, ../scss/_home.scss */
 section.about a {
   color: inherit;
   border-bottom: 2px solid rgba(116, 92, 87, 0.2);
 }
-/* line 126, ../scss/_home.scss */
+/* line 132, ../scss/_home.scss */
 section.about a:hover {
   border-bottom-color: #745C57;
 }
-/* line 131, ../scss/_home.scss */
+/* line 137, ../scss/_home.scss */
 section.about div.photo {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -507,7 +512,7 @@ section.about div.photo {
   margin-bottom: 1.5rem;
 }
 @media (min-width: 768px) {
-  /* line 131, ../scss/_home.scss */
+  /* line 137, ../scss/_home.scss */
   section.about div.photo {
     width: 32.20339%;
     float: left;
@@ -518,38 +523,38 @@ section.about div.photo {
     height: auto;
   }
 }
-/* line 145, ../scss/_home.scss */
+/* line 151, ../scss/_home.scss */
 section.about div.photo img {
   width: 100%;
   position: relative;
   top: -3px;
 }
 @media (min-width: 768px) {
-  /* line 145, ../scss/_home.scss */
+  /* line 151, ../scss/_home.scss */
   section.about div.photo img {
     width: 95%;
     top: 6px;
   }
 }
 @media (min-width: 768px) {
-  /* line 157, ../scss/_home.scss */
+  /* line 163, ../scss/_home.scss */
   section.about div.bio {
     width: 66.10169%;
     float: right;
     margin-right: 0;
   }
 }
-/* line 163, ../scss/_home.scss */
+/* line 169, ../scss/_home.scss */
 section.about p {
   font-size: 17px;
   line-height: 28px;
 }
-/* line 167, ../scss/_home.scss */
+/* line 173, ../scss/_home.scss */
 section.about p + p {
   text-indent: 2rem;
 }
 @media (min-width: 768px) {
-  /* line 163, ../scss/_home.scss */
+  /* line 169, ../scss/_home.scss */
   section.about p {
     font-size: 21px;
     line-height: 35px;

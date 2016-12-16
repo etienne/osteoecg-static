@@ -76,11 +76,17 @@ section.hero {
       line-height: 29px;
     }
     
+    span {
+      display: inline-block;
+      @extend %sans;
+      margin-bottom: 0.75rem;
+    }
+    
     a {
       color: $creme;
 
       &.button {
-        margin-bottom: 1rem;
+        margin: 0 0.2rem 1rem;
         
         &:hover {
           background-color: $creme;
