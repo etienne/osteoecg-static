@@ -1,38 +1,39 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Quicksand:700);
-/* line 13, ../scss/_mixins.scss */
-a.button, div.menu, section.hero div.actions span {
+
+a.button,
+div.menu,
+section.hero div.actions span {
   font-family: "Quicksand";
   font-weight: 700;
   text-transform: uppercase;
   font-size: 13px;
 }
+
 @media (min-width: 768px) {
-  /* line 13, ../scss/_mixins.scss */
-  a.button, div.menu, section.hero div.actions span {
+  a.button,
+  div.menu,
+  section.hero div.actions span {
     font-size: 14px;
   }
 }
 
-/* line 1, ../scss/_global.scss */
 a {
   color: #6CD5CB;
   text-decoration: none;
 }
 
-/* line 6, ../scss/_global.scss */
 p {
   margin: 0;
   padding: 0;
 }
 
-/* line 11, ../scss/_global.scss */
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 17, ../scss/_global.scss */
 h3 {
   text-align: center;
   font-size: 20px;
@@ -41,8 +42,8 @@ h3 {
   padding-bottom: 1.5rem;
   margin-bottom: 2.5rem;
 }
+
 @media (min-width: 768px) {
-  /* line 17, ../scss/_global.scss */
   h3 {
     font-size: 24px;
     line-height: 32px;
@@ -50,18 +51,17 @@ h3 {
   }
 }
 
-/* line 32, ../scss/_global.scss */
 h4 {
   margin: 1rem 0 0;
 }
-/* line 35, ../scss/_global.scss */
+
 h4 span {
   color: rgba(116, 92, 87, 0.4);
   font-weight: normal;
 }
 
-/* line 41, ../scss/_global.scss */
 a.button {
+  position: relative;
   display: inline-block;
   border: 2px solid;
   -moz-border-radius: 3px;
@@ -70,14 +70,40 @@ a.button {
   padding: 0.6rem 1.1rem;
   text-align: center;
 }
-/* line 49, ../scss/_global.scss */
+
+a.button[data-note]::after {
+  position: absolute;
+  left: -2px;
+  border-radius: 0 0 3px 3px;
+  bottom: -1.7rem;
+  height: 1.8rem;
+  border: 2px solid #F8F5EE;
+  width: 100%;
+  content: attr(data-note);
+  background-color: #F8F5EE;
+  color: #745C57;
+  font-size: 11px;
+}
+
+section.hero div.actions a.button span {
+  margin-bottom: 0;
+}
+
+section.hero div.actions a.button span.days {
+  display: block;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  text-transform: none;
+  font-style: italic;
+  line-height: 24px;
+}
+
 a.button:hover {
   background-color: #6CD5CB;
   border-color: #6CD5CB;
   color: #F8F5EE;
 }
 
-/* line 1, ../scss/_layout.scss */
 body {
   background-color: #F8F5EE;
   margin: 2rem 0 0;
@@ -86,53 +112,38 @@ body {
   font-weight: 400;
   color: #745C57;
 }
+
 @media (min-width: 768px) {
-  /* line 1, ../scss/_layout.scss */
   body {
     margin-top: 5rem;
   }
 }
+
 @media (min-width: 980px) {
-  /* line 1, ../scss/_layout.scss */
   body {
     margin-top: 8rem;
   }
 }
 
-/* line 18, ../scss/_layout.scss */
 .container {
   max-width: 92%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+
 .container:after {
   content: " ";
   display: block;
   clear: both;
 }
+
 @media (min-width: 768px) {
-  /* line 18, ../scss/_layout.scss */
   .container {
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
-  .container:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-}
-@media (min-width: 980px) {
-  /* line 18, ../scss/_layout.scss */
-  .container {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+
   .container:after {
     content: " ";
     display: block;
@@ -140,51 +151,65 @@ body {
   }
 }
 
-/* line 30, ../scss/_layout.scss */
+@media (min-width: 980px) {
+  .container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
 header {
   margin-bottom: 2rem;
 }
+
 @media (min-width: 768px) {
-  /* line 30, ../scss/_layout.scss */
   header {
     margin-bottom: 5rem;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 38, ../scss/_layout.scss */
   div.signature {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-/* line 43, ../scss/_layout.scss */
-div.signature h1, div.signature h2 {
+
+div.signature h1,
+div.signature h2 {
   font-size: 22px;
   line-height: 32px;
   margin: 0;
   padding: 0;
 }
+
 @media (min-width: 768px) {
-  /* line 43, ../scss/_layout.scss */
-  div.signature h1, div.signature h2 {
+
+  div.signature h1,
+  div.signature h2 {
     font-size: 27px;
     line-height: 37px;
   }
 }
-/* line 55, ../scss/_layout.scss */
+
 div.signature h2 {
   font-weight: 400;
   font-style: italic;
 }
 
-/* line 61, ../scss/_layout.scss */
 div.menu {
   margin-top: 1.5rem;
 }
+
 @media (min-width: 768px) {
-  /* line 61, ../scss/_layout.scss */
   div.menu {
     width: 49.15254%;
     float: right;
@@ -192,31 +217,30 @@ div.menu {
     margin-top: 1rem;
   }
 }
+
 @media (min-width: 768px) {
-  /* line 70, ../scss/_layout.scss */
   div.menu ul {
     float: right;
   }
 }
-/* line 75, ../scss/_layout.scss */
+
 div.menu ul li {
   margin-left: 1.6rem;
   float: left;
 }
-/* line 80, ../scss/_layout.scss */
+
 div.menu ul a {
   padding-bottom: 0.6rem;
 }
-/* line 83, ../scss/_layout.scss */
+
 div.menu ul a:hover {
   border-bottom: 5px solid;
 }
-/* line 87, ../scss/_layout.scss */
+
 div.menu ul a img.facebook {
   width: 16px;
 }
 
-/* line 94, ../scss/_layout.scss */
 footer {
   margin-top: 5rem;
   padding: 80px 0 8rem;
@@ -224,21 +248,21 @@ footer {
   font-size: 14px;
   line-height: 26px;
 }
+
 @media (min-width: 768px) {
-  /* line 94, ../scss/_layout.scss */
   footer {
     margin-top: 6rem;
     padding-bottom: 8rem;
   }
 }
+
 @media (min-width: 980px) {
-  /* line 94, ../scss/_layout.scss */
   footer {
     margin-top: 8rem;
     padding-bottom: 12rem;
   }
 }
-/* line 111, ../scss/_layout.scss */
+
 footer:before {
   content: "";
   position: absolute;
@@ -249,8 +273,8 @@ footer:before {
   background: url("../images/logo-footer.png") no-repeat center;
   background-size: 81px;
 }
+
 @media (min-width: 768px) {
-  /* line 111, ../scss/_layout.scss */
   footer:before {
     margin: -104px 0 0 -60px;
     width: 121px;
@@ -258,8 +282,8 @@ footer:before {
     background-size: 121px;
   }
 }
+
 @media (min-width: 980px) {
-  /* line 111, ../scss/_layout.scss */
   footer:before {
     margin: -112px 0 0 -80px;
     width: 161px;
@@ -267,12 +291,12 @@ footer:before {
     background-size: 161px;
   }
 }
-/* line 136, ../scss/_layout.scss */
+
 footer div.appointment {
   text-align: center;
 }
+
 @media (min-width: 768px) {
-  /* line 136, ../scss/_layout.scss */
   footer div.appointment {
     text-align: left;
     width: 49.15254%;
@@ -280,25 +304,34 @@ footer div.appointment {
     margin-right: 1.69492%;
   }
 }
-/* line 144, ../scss/_layout.scss */
+
 footer div.appointment a.button {
   display: block;
   margin: 1rem auto 1rem;
   float: none;
 }
+
 @media (min-width: 768px) {
-  /* line 144, ../scss/_layout.scss */
   footer div.appointment a.button {
     margin-top: 0;
     float: left;
   }
 }
-/* line 156, ../scss/_layout.scss */
+
 footer div.addresses {
   text-align: center;
 }
+
+footer div.addresses p.warning {
+  font-family: "Quicksand";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 11px;
+
+  color: #6CD5CB;
+}
+
 @media (min-width: 768px) {
-  /* line 156, ../scss/_layout.scss */
   footer div.addresses {
     width: 49.15254%;
     float: right;
@@ -306,20 +339,20 @@ footer div.addresses {
     text-align: right;
   }
 }
-/* line 165, ../scss/_layout.scss */
+
 footer ul.contact {
   clear: both;
 }
-/* line 168, ../scss/_layout.scss */
+
 footer ul.contact a {
   color: #745C57;
   border-bottom: 2px solid rgba(116, 92, 87, 0.1);
 }
-/* line 172, ../scss/_layout.scss */
+
 footer ul.contact a:hover {
   border-bottom-color: rgba(116, 92, 87, 0.3);
 }
-/* line 176, ../scss/_layout.scss */
+
 footer ul.contact a.button {
   position: relative;
   top: -1px;
@@ -330,13 +363,12 @@ footer ul.contact a.button {
   line-height: 21px;
   color: rgba(116, 92, 87, 0.6);
 }
-/* line 186, ../scss/_layout.scss */
+
 footer ul.contact a.button:hover {
   border-color: #6CD5CB;
   color: #F8F5EE;
 }
 
-/* line 1, ../scss/_home.scss */
 section.hero {
   background-color: #ab8886;
   background-image: url("../images/gradient.png"), url("../images/cercle.png"), url("../images/ciel.jpg");
@@ -346,21 +378,21 @@ section.hero {
   background-blend-mode: multiply, multiply, normal;
   color: #F8F5EE;
 }
+
 @media (min-width: 768px) {
-  /* line 1, ../scss/_home.scss */
   section.hero {
     background-size: auto, 121px, cover;
     background-position: bottom, 50% -24px, 50% 63%;
   }
 }
+
 @media (min-width: 980px) {
-  /* line 1, ../scss/_home.scss */
   section.hero {
     background-size: auto, 161px, cover;
     background-position: bottom, 50% -32px, 50% 63%;
   }
 }
-/* line 20, ../scss/_home.scss */
+
 section.hero:before {
   content: "";
   background-image: url("../images/cercle.png");
@@ -372,23 +404,23 @@ section.hero:before {
   position: relative;
   top: -16px;
 }
+
 @media (min-width: 768px) {
-  /* line 20, ../scss/_home.scss */
   section.hero:before {
     height: 24px;
     background-size: 121px;
     top: -24px;
   }
 }
+
 @media (min-width: 980px) {
-  /* line 20, ../scss/_home.scss */
   section.hero:before {
     height: 32px;
     background-size: 161px;
     top: -32px;
   }
 }
-/* line 44, ../scss/_home.scss */
+
 section.hero p {
   width: 100%;
   float: left;
@@ -400,25 +432,25 @@ section.hero p {
   font-style: italic;
   margin: 1rem 0;
 }
+
 @media (min-width: 768px) {
-  /* line 44, ../scss/_home.scss */
   section.hero p {
     font-size: 46px;
     line-height: 62px;
     margin: 2.5rem 0;
   }
 }
-/* line 58, ../scss/_home.scss */
+
 section.hero p br {
   display: none;
 }
+
 @media (min-width: 768px) {
-  /* line 58, ../scss/_home.scss */
   section.hero p br {
     display: block;
   }
 }
-/* line 67, ../scss/_home.scss */
+
 section.hero div.actions {
   width: 100%;
   float: left;
@@ -429,78 +461,76 @@ section.hero div.actions {
   font-size: 15px;
   line-height: 24px;
 }
+
 @media (min-width: 768px) {
-  /* line 67, ../scss/_home.scss */
   section.hero div.actions {
     font-size: 18px;
     line-height: 29px;
   }
 }
-/* line 79, ../scss/_home.scss */
+
 section.hero div.actions span {
   display: inline-block;
   margin-bottom: 0.75rem;
 }
-/* line 85, ../scss/_home.scss */
+
 section.hero div.actions a {
   color: #F8F5EE;
 }
-/* line 88, ../scss/_home.scss */
+
 section.hero div.actions a.button {
-  margin: 0 0.2rem 1rem;
+  margin: 0 0.2rem 2rem;
 }
-/* line 91, ../scss/_home.scss */
+
 section.hero div.actions a.button:hover {
   background-color: #F8F5EE;
   border-color: #F8F5EE;
   color: #745C57;
 }
-/* line 98, ../scss/_home.scss */
+
 section.hero div.actions a.tel {
   font-weight: 700;
 }
 
-/* line 105, ../scss/_home.scss */
 img.logo {
   display: block;
   margin: 0 auto 30px;
   width: 57px;
 }
+
 @media (min-width: 768px) {
-  /* line 105, ../scss/_home.scss */
   img.logo {
     margin: 0 auto 36px;
     width: 85px;
   }
 }
+
 @media (min-width: 980px) {
-  /* line 105, ../scss/_home.scss */
   img.logo {
     margin: 0 auto 42px;
     width: 113px;
   }
 }
 
-/* line 121, ../scss/_home.scss */
 section.about {
   margin: 2.5rem 0;
 }
+
 @media (min-width: 768px) {
-  /* line 121, ../scss/_home.scss */
   section.about {
     margin: 4rem 0;
   }
 }
-/* line 128, ../scss/_home.scss */
+
 section.about a {
   color: inherit;
   border-bottom: 2px solid rgba(116, 92, 87, 0.2);
 }
-/* line 132, ../scss/_home.scss */
+
 section.about a:hover {
   border-bottom-color: #745C57;
 }
-/* line 137, ../scss/_home.scss */
+
 section.about div.photo {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -511,8 +541,8 @@ section.about div.photo {
   overflow: hidden;
   margin-bottom: 1.5rem;
 }
+
 @media (min-width: 768px) {
-  /* line 137, ../scss/_home.scss */
   section.about div.photo {
     width: 32.20339%;
     float: left;
@@ -523,38 +553,38 @@ section.about div.photo {
     height: auto;
   }
 }
-/* line 151, ../scss/_home.scss */
+
 section.about div.photo img {
   width: 100%;
   position: relative;
   top: -3px;
 }
+
 @media (min-width: 768px) {
-  /* line 151, ../scss/_home.scss */
   section.about div.photo img {
     width: 95%;
     top: 6px;
   }
 }
+
 @media (min-width: 768px) {
-  /* line 163, ../scss/_home.scss */
   section.about div.bio {
     width: 66.10169%;
     float: right;
     margin-right: 0;
   }
 }
-/* line 169, ../scss/_home.scss */
+
 section.about p {
   font-size: 17px;
   line-height: 28px;
 }
-/* line 173, ../scss/_home.scss */
-section.about p + p {
+
+section.about p+p {
   text-indent: 2rem;
 }
+
 @media (min-width: 768px) {
-  /* line 169, ../scss/_home.scss */
   section.about p {
     font-size: 21px;
     line-height: 35px;
