@@ -437,6 +437,7 @@ section.hero p {
 
 section.hero div.warning {
   background-color: rgba(0, 68, 62, 0.2);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px 0;
