@@ -441,6 +441,7 @@ section.hero div.warning {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 section.hero div.warning p {
