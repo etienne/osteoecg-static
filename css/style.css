@@ -2,7 +2,9 @@
 
 a.button,
 div.menu,
-section.hero div.actions span {
+section.hero div.actions span,
+section.hero div.warning p.note
+{
   font-family: "Quicksand";
   font-weight: 700;
   text-transform: uppercase;
@@ -433,11 +435,42 @@ section.hero p {
   margin: 1rem 0;
 }
 
+section.hero div.warning {
+  background-color: rgba(0, 68, 62, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px 0;
+}
+
+section.hero div.warning p {
+  float: none;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+}
+
+section.hero div.warning p.note {
+  font-style: normal;
+  margin: 0;
+  opacity: 0.5;
+  line-height: 1;
+}
+
+
 @media (min-width: 768px) {
   section.hero p {
     font-size: 46px;
     line-height: 62px;
     margin: 2.5rem 0;
+  }
+
+  section.hero div.warning {
+    padding: 35px 0;
+  }
+
+  section.hero div.warning p {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 
